@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+//Leia um valor inteiro, que é o tempo de duração em segundos de um determinado evento em uma fábrica, e informe-o expresso no formato horas:minutos:segundos.
+
+int main() {
+
+    int idade;
+
+    scanf("%i",&idade);
+
+    printf("%i ano(s)\n",idade/365);
+    idade%=365;
+    printf("%i mes(es)\n",idade/30);
+    idade%=30;
+    printf("%i dia(s)\n",idade);
+
+    return 0;
+}
